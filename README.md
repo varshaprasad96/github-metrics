@@ -24,10 +24,10 @@ Metrics exposed on http://localhost:8000
 Output:
 
 1. Data exposed at endpoint for Prometheus to scrape it:
-![Image of Yaktocat]:
+![Image](https://github.com/varshaprasad96/github-metrics/blob/dev/output_images/Data-at-endpoint.png)
 
 2. Data exposed in prometheus:
-![Image]
+![Image-Data](https://github.com/varshaprasad96/github-metrics/blob/dev/output_images/Prometheus-data.png)
 
-3. Same graph (just one metric is used as of now)
-[!Image]
+3. Same graph (just one metric is used as of now) -  Similar graph is also obtained in grafana
+![Image-graph](https://github.com/varshaprasad96/github-metrics/blob/dev/output_images/Example-Graph.png)
