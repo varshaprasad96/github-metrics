@@ -1,23 +1,26 @@
 # github-metrics
-Utilize GraphQL API to get the reachability metrics about Operator-SDK
+Utilize GraphQL API and RestAPI to get the reachability metrics about Operator-SDK
 
 The project utilizes GraphQL to scrape GitHub and obtain data about Operator-SDK.
 
 Things-done:
- - Scrape github to get the list of repositories which use Operator-SDK.
+ - Scrape github to get the list of repositories which use Operator-SDK - RestAPI.
  - Traverse through multiple pages to get the data.
+ - Check for patterns in repositories.
+ - Use GraphQL to update data.
  - Expose to prometheus.
  - Create Grafana dashboard.
 
 Things TO-DO:
-- Remove forks / cloned repositories.
+- Work on gopkg.toml files
 - Collect additional metrics (version etc)
+- Process commit history
 
 ## Running Script
 
 Run:  
 ```bash
-$ python prom-expose.py
+$ python sdk-metrics.py
 ```
 Metrics exposed on http://localhost:8000
 
